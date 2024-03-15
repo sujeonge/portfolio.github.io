@@ -1,0 +1,38 @@
+body{font-size:10px;}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;}
+
+ul li{
+    list-style: none;
+}
+
+img {margin: 0; padding: 0;}
+
+
+
+.container{
+    width:1680px;
+    margin:0 auto;
+}
+
+@font-face {
+    font-family: 'Bochan Serif', sans-serif;
+    src: url('../font/Bochan\ Serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    src:
+      url('../fonts/OverusedGrotesk-VF.woff2') format('woff2 supports variations'),
+      url('../fonts/OverusedGrotesk-VF.woff2') format('woff2-variations');
+    font-weight: 300 900;
+  }
+
