@@ -39,6 +39,8 @@
     position:absolute;
     left:-1%;
 }
+
+/* 이메일버튼 */
 .con-email{
     border:2px solid;
     width:33.3rem;
@@ -55,13 +57,14 @@
 .con-email:hover{
     background-color:#D1D3FF;
     transition: all 1s;
-    
+    scale: 1.1;
 }
 
 .con-email img{
     padding-right:1rem;
 }
 
+/* 메인나타내는 글 */
 .mainfont{
     text-align:center;
     padding-top:17.4rem;
@@ -100,7 +103,7 @@
     height:100%;
     position:absolute;
     top:5%;
-    left:13%;
+    left:14%;
 }
 
 .mainfontstar::after{
@@ -113,9 +116,11 @@
     top:10%;
     right:11%;
 }
+/* 화살표 */
 .pigarrow{
     position: relative;
 }
+
 .pigarrow::after{
     content:'';
     background-image: url(../img/figarrow.png);
@@ -127,6 +132,7 @@
     right:0;
 }
 
+/* 하단글 */
 .bottomtext{
     padding-top:100px;
     font-size:var(--font-size-headline-l);
@@ -147,30 +153,37 @@
 /* 흐르는 텍스트 */
 .flowtape{
     background-color: #9999FF;
-    height:142px;
+    height:100px;
+    overflow: hidden;
+    width:100%;
+    position: relative;
+    max-width:100%;
+    
 }
 
-.flowtape p{
-    font-size:var(--font-size-headline-xl);
-    line-height:142px;
-    text-align: center;
+.flowtape >p{
+    font-size:var(--font-size-headline-sxl);
+    line-height:100px;
     font-weight: var(--font-weight-bold);
-    animation-name: flow;
-    animation-duration:2s;
-    animation-iteration-count:infinite;
-    
+    animation:flow 50s linear infinite;
+    color:#ffffff;
+    animation-delay: -15s;
+    display: block; 
+    position: absolute; 
+    /* width:1600px; */
+    white-space: nowrap;
+    font-family: var(--font-over);
+    letter-spacing: 3px;
   }
-  
-  @keyframes flow {
-    0% {
-      left:-500px;
-    }
-    100% {
-      left:300px;
-    }
-  }
+
+
+@keyframes flow {
+    from { transform: translateX(0%);}
+    to { transform: translateX(-50%);}
+}
  
-  .profiledetail{
+  /* 프로필 */
+  .profile{
    background-image: url(../img/profilebg.png);
     width:1680px;
     height:1020px;
@@ -180,7 +193,6 @@
     border-radius:30px;
     box-shadow:3px 3px 10px rgba(0,0,0,20%);
     position:relative;
-    z-index: -99;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -208,6 +220,101 @@
     top:20%;
     left:30%;
   }
+
+
+  /* 웹작업내용 */
+  .weball{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px;
+  }
+  .projectall{
+    height:622px;
+  }
+
+  .webproject{
+    width:52rem;
+    height:518px;
+    background-color: #000;
+    /* position: relative; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+/* 웹 프로젝트 이름 */
+  .name{
+    width:52rem;
+    height:112px;
+    background-color: #9999FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+h4{
+    margin-top:13rem;
+    font-size:var(--font-size-headline-xxl);
+    font-family: var(--font-family-bochan);
+    text-transform: capitalize;
+    border-bottom:2px solid;
+    padding-bottom:3rem;
+}
+
+/* 전체 래디우스(전체 곡선주기) */
+.projectall:hover div{
+    border-radius: 10rem;
+    transition: all 0.5s;
+}
+
+.projectall:hover .w-btn{
+    display:contents;
+    width:50%;
+    height:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: transparent;
+    border:1px solid #ffffff;
+    border-radius:30rem;
+    margin-bottom:2rem;
+    color:#ffffff;
+}
+
+.w-btn{
+    width:50%;
+    height:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: transparent;
+    border:1px solid #ffffff;
+    border-radius:30rem;
+    margin-bottom:2rem;
+    color:#ffffff;
+    display: none;
+}
+
+.name >p{
+    display: flex;
+    text-align: center;
+}
+
+.name >p:first-child{
+    font-size:var(--font-size-title-s);
+}
+
+.name >p:last-child{
+    font-size:var(--font-size-headline-m);
+}
+
 
 
   
