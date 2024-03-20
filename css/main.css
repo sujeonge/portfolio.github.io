@@ -33,7 +33,7 @@
 .mainimg::before{
     content: '';
     background-image: url(../img/leftDESIIEGER.png);
-    width:800px;
+    width:100px;
     height:1000px;
     background-repeat: no-repeat;
     position:absolute;
@@ -52,11 +52,11 @@
     font-weight: var(--font-weight-bold);
     padding:0 25px;
     float:right;
+    transition: all 1s;
 }
 
 .con-email:hover{
     background-color:#D1D3FF;
-    transition: all 1s;
     scale: 1.1;
 }
 
@@ -77,6 +77,14 @@
     position: relative;
 }
 
+.smalltext{
+  
+  font-size:var(--font-size-headline-ssl);
+  width:16.4rem;
+  top:20px;
+  text-align: center;
+}
+
 .mainfont h2::after{
     content: '';
     background-image:url(../img/copyrightmark.png);
@@ -89,6 +97,19 @@
     
 }
 
+path {
+  stroke-dasharray: 7000;
+  stroke-dashoffset: 7000;
+  animation: path 11s forwards infinite;
+  animation-delay: -2s; /* 애니메이션 지속 시간을 5초로 수정했습니다. */
+}
+
+@keyframes path {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .mainfont h3{
     font-size:var(--font-size-headline-xxxl);
     padding-bottom:1.6rem;
@@ -99,12 +120,24 @@
     content: '';
     background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
-    width: 470px;
+    width: 200px;
     height:100%;
     position:absolute;
     top:5%;
     left:14%;
 }
+
+.first::before{
+  content: '';
+  background-image: url(../img/mainsujeongname.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height:100%;
+  position:absolute;
+  bottom:-108%;
+  left:31.7%;
+}
+
 
 .mainfontstar::after{
     content: '';
@@ -120,17 +153,12 @@
 .pigarrow{
     position: relative;
 }
-
-.pigarrow::after{
-    content:'';
-    background-image: url(../img/figarrow.png);
-    background-repeat: no-repeat;
-    width: 500px;
-    height:500px;
-    position:absolute;
-    bottom:24%;
-    right:0;
+.content1{
+  position:absolute;
+  top:11%;
+  right:7%;
 }
+
 
 /* 하단글 */
 .bottomtext{
@@ -200,27 +228,45 @@
   .my{
     font-size:var(--font-size-headline-l);
     padding-left:50rem;
-    padding-top:10rem;
+    padding-top:20rem;
+    
   }
 
-  .my p:first-child{
+  .my >h5:first-child{
     font-size:var(--font-size-headline-s);
+    padding-bottom:1rem;
   }
 
-  .my p:last-child{
+  .my >h6{
     font-size:var(--font-size-headline-xl);
+    font-family: var(--font-family-bochan);
+    border-bottom:1px solid ;
+    padding-bottom:2rem;
   }
 
-  .my p:last-child::after{
-    content: '';
-    width:80rem;
-    background-color: #000;
-    height:1px;
-    position:absolute;
-    top:20%;
-    left:30%;
+  .mywrap{
+    display: flex;
+    gap:30rem;
+    margin-top:4rem;
+  }
+  
+  .left-writter > strong, .right-writter > strong{
+    font-family: var(--font-family-bochan);
+    font-size:var(--font-size-headline-s);
+    margin-bottom:10rem;
+    margin-top:1rem;
   }
 
+  .w-small{
+    font-size:var(--font-size-headline-s);
+    margin-bottom:4rem;
+    
+  }
+ 
+  .skillimg > img{
+    margin-bottom:2rem;
+    margin-right:2rem;
+  }
 
   /* 웹작업내용 */
   .weball{
@@ -231,20 +277,46 @@
   }
   .projectall{
     height:622px;
+    transition: all 0.5s;
+    position: relative;
   }
 
-  .webproject{
+  .projectcontent{
     width:52rem;
     height:518px;
-    background-color: #000;
+    background-color: #f5f5f5;
     /* position: relative; */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
+
+
+  .web1::after{
+    content:'';
+    background-image: url(../img/museumthum2.png);
+    width:45.5rem;
+    height:46.7rem;
+  }
+
+  .web2::after{
+    content:'';
+    background-image: url(../img/centerthum2.png);
+    width:44.6rem;
+    height:29.6rem;
+    left:-1rem;
+  }
+
+  .web3::after{
+    content:'';
+    background-image: url(../img/lucidthum2.png);
+    width:45.5rem;
+    height:46.7rem;
+  }
+
+  
 
 /* 웹 프로젝트 이름 */
   .name{
@@ -269,37 +341,48 @@ h4{
 /* 전체 래디우스(전체 곡선주기) */
 .projectall:hover div{
     border-radius: 10rem;
-    transition: all 0.5s;
+    
 }
 
 .projectall:hover .w-btn{
     display:contents;
-    width:50%;
-    height:60px;
+    /* width:50%;
+    height:60px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
     background-color: transparent;
-    border:1px solid #ffffff;
     border-radius:30rem;
     margin-bottom:2rem;
     color:#ffffff;
+    position: absolute;
+    top:30%;
+    gap:20rem;
+    background-color: #9999FF;
+    font-size:var(--font-size-title-l);
+    font-weight: var(--font-weight-bold);
 }
 
+
+
 .w-btn{
-    width:50%;
-    height:60px;
+    width:60%;
+    height:80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     background-color: transparent;
-    border:1px solid #ffffff;
+    
     border-radius:30rem;
     margin-bottom:2rem;
     color:#ffffff;
+    background-color: #ffffff;
     display: none;
+    
+}
+
+.w-btn:last-child{
+  margin-top: 10rem;
 }
 
 .name >p{
@@ -315,6 +398,56 @@ h4{
     font-size:var(--font-size-headline-m);
 }
 
+/* 3d & uiux작업 */
 
+.ui1::after{
+  content:'';
+  background-image: url(../img/cineqthum2.png);
+  width:45.5rem;
+  height:46.7rem;
+}
+
+.ui2::after{
+  
+}
+
+.ui3::after{
+  content:'';
+  background-image: url(../img/coffeethum1.png);
+  width:37.1rem;
+  height:37.7rem;
+}
 
   
+/* 푸터 */
+/* 푸터 */
+footer{
+  width:100%;
+  position: relative;
+ 
+  margin-top:80px;
+  text-align: center;
+}
+.user{
+  width:150rem;
+  height:10rem;
+  background-color: #9999FF;
+  margin: 0 auto;
+  line-height: 10rem;
+  border-radius: 50px;
+  margin-bottom:20px;
+}
+footer .margin{
+  padding-bottom:61px;
+  font-size:15px;
+}
+.address{
+  font-size:15px;
+  margin-bottom:15px;
+}
+
+footer .stroke{
+  border: 0.5px solid #ECE9F1;
+  opacity: 30%;
+  margin-bottom:38px;
+}
