@@ -98,10 +98,10 @@
 }
 
 path {
-  stroke-dasharray: 7000;
-  stroke-dashoffset: 7000;
-  animation: path 11s forwards infinite;
-  animation-delay: -2s; /* 애니메이션 지속 시간을 5초로 수정했습니다. */
+  stroke-dasharray: 1020;
+  stroke-dashoffset: 1020;
+  animation: path 3s forwards infinite;
+  /*animation-delay: -2s; 애니메이션 지속 시간을 5초로 수정했습니다. */
 }
 
 @keyframes path {
@@ -116,6 +116,14 @@ path {
     position: relative;
 }
 
+.mainfontstar {
+  background-image: url(../img/achieve.png);
+  width:112.4rem;
+  height:14.7rem;
+  position:relative;
+  top:0;
+  left:20%;
+}
 .mainfontstar::before{
     content: '';
     background-image: url(../img/arrow.png);
@@ -124,12 +132,14 @@ path {
     height:100%;
     position:absolute;
     top:5%;
-    left:14%;
+    left:-10%;
+    transform: translate(-50%,0);
+    display: flex;
 }
 
 .first::before{
   content: '';
-  background-image: url(../img/mainsujeongname.png);
+  /* background-image: url(../img/mainsujeongname.png); */
   background-repeat: no-repeat;
   width: 200px;
   height:100%;
@@ -139,7 +149,7 @@ path {
 }
 
 
-.mainfontstar::after{
+/* .mainfontstar::after{
     content: '';
     background-image: url(../img/archivestar.png);
     background-repeat: no-repeat;
@@ -148,7 +158,7 @@ path {
     position:absolute;
     top:10%;
     right:11%;
-}
+} */
 /* 화살표 */
 .pigarrow{
     position: relative;
@@ -291,6 +301,7 @@ path {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s;
   }
 
 
@@ -327,6 +338,7 @@ path {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
   }
 
 h4{
@@ -340,7 +352,7 @@ h4{
 
 /* 전체 래디우스(전체 곡선주기) */
 .projectall:hover div{
-    border-radius: 10rem;
+    border-radius: 60px;
     
 }
 
