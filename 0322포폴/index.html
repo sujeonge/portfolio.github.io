@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/comportnant.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>조수정 포트폴리오</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modalbody">
+            <div class="modalclose">
+                X
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+    <div class="cursor"></div>
+    
+    <!-- 메인헤더 -->
+    <div class="mainwrap">
+        <div class="container">
+            <header class="gnb">
+                <h1 class="logo"><img src="./img/portfoliologo.png" alt="자체 로고이미지"></h1>
+                <ul class="right-gnb">
+                    <li><a href="./index.html" class="gnbcon">Home</a></li>
+                    <li><a href="#" class="gnbcon">Profile</a></li>
+                    <li><a href="#" class="gnbcon">Project</a></li>
+                </ul>     
+            </header>
+            <!-- 화면 줄었을 때 나타나는 햄버거바 -->
+            <div class="right-gnb-small">
+                <div class="circleham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //메인헤더끝 -->
+    <!-- 마우스 -->
+    <!-- 메인이미지 -->
+    <div class="mainimg">
+        <div class="container">
+            <div class="con-email">
+                <img src="./img/emailarrow.png" alt="">
+                <a href="mailto:nkss232@naver.com" >contact e-mail</a>
+            </div>
+
+            <div class="mainfont">
+                <h2 class="first">WELCOME to my</h2>
+                <div class="mainfontstar">
+                    <div class="arrowwrap">
+                      <svg width="188" height="111" viewBox="0 0 188 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="arrowanimation">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M134.37 99.5613L130.932 103.191L138.191 110.069L141.63 106.439L186.63 58.9387C188.457 57.0103 188.457 53.9898 186.63 52.0613L141.63 4.56129L138.191 0.931519L130.932 7.80897L134.37 11.4387L171.849 51L5 51H0V61H5L170.902 61L134.37 99.5613Z" fill="black"/>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                <h3 class="pigarrow">PORTFOLIO<br></h3>
+                <div class="content1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="459" height="519" viewBox="0 0 459 519" fill="none" >
+                        <g class="svg-group">
+                        <path d="M75.233 456.387C149.022 469.422 330.5 540.5 345.167 393.571C347.292 340.132 315.833 325.483 306.682 351.261C278.395 430.942 356.056 462.116 394.252 427.658C443.532 383.201 451.375 304.666 351.625 7.91663" stroke="black" stroke-width="3"/>
+                        <path d="M324.5 67C332.667 72.6667 349.6 68.3 352 5.5C380.5 53 395 61.5 408 57.5" stroke="black" stroke-width="3"/>
+                        </g>
+                    </svg>             
+                </div>
+            </div>
+
+            <div class="bottomtext">
+                <p>2024 portfolio</p>
+                <span></span>
+                <p>nkss232@naver.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- 다음섹션-흐르는 텍스트 -->
+    <div class="flowtape">
+        <p>&nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+            &nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+            &nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+            &nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+            &nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+            &nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+            &nbsp;&nbsp;&nbsp;2024 PORTFOLIO DESIGN BY JOSUJEONG &nbsp;&nbsp;UI/UX CONTACT &nbsp;NKSS232@NAVER.COM
+
+        </p>
+    </div>   
+    <!-- 프로필 -->
+    <div class="profilewrap" id="profilewrap">
+    <div class="profile">
+        <div class="container">
+                <div class="my">
+                    <h5>끊임없이 유연하게 변화,
+                        융화하는 슬라임 같은 웹디자이너 조수정입니다.</h5>
+                    <h6>Like Slime, sujeong jo</h6>
+                    <div class="mywrap">
+                        <div class="left-writter">
+                            <strong>Birth</strong>
+                            <p class="w-small">1996.11.10</p>
+                            <strong>kakao ID</strong>
+                            <p class="w-small">nkss232</p>
+                            <strong>Works</strong>
+                            <p class="w-small">2020-2022 yj그룹 마케팅 디자이너</p>
+                            <strong>Education</strong>
+                            <p class="w-small">경일대학교 제품디자인전공</p>
+                        </div>
+                        <div class="right-writter">
+                            <strong>Skill</strong>
+                            <div class="skillwrap">
+                                <div class="skillimg">
+                                    <img src="./img/vscode.png" alt="vs코드">
+                                    <img src="./img/Figma.png" alt="피그마">
+                                    <img src="./img/Photoshop.png" alt="포토샵">
+                                    </div>
+                                <div class="skillimg">
+                                    <img src="./img/Photoshop.png" alt="포토샵">
+                                    <img src="./img/Illustrator.png" alt="일러스트">
+                                    <img src="./img/AfterEffects.png" alt="포토샵">
+                                </div>
+                                <div class="skillimg">
+                                    <img src="./img/PremierePro.png" alt="vs코드">
+                                    <img src="./img/3dsmax.png" alt="3ds max">
+                                    <img src="./img/blender.png" alt="블렌더">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+
+    
+    <!-- 웹작업내용 -->
+    <div class="webprojectwrap" id="webprojectwrap">
+        <!-- 웹팝업버튼 -->
+        <div class="container">
+            <h4>web project</h4>
+            <div class="weball">
+                <div class="projectall">
+                    <div class="projectcontent web1">
+                        <a href="#" class="w-btn btn1">기획서</a>
+                        <a href="#" class="w-btn">사이트</a>
+                    </div>
+                    <div class="name">
+                        <p>웹사이트 리디자인</p>
+                        <p>해녀박물관</p>
+                    </div>
+                </div>
+
+                <div class="projectall">
+                    <div class="projectcontent web2">
+                        <a href="#" class="w-btn btn2">기획서</a>
+                        <a href="#" class="w-btn">사이트</a>
+                    </div>
+                    <div class="name">
+                        <p>반응형 웹사이트 리디자인</p>
+                        <p>대구청년센터-라이즈</p>
+                    </div>
+                </div>
+
+                <div class="projectall">
+                    <div class="projectcontent web3">
+                        <a href="#" class="w-btn btn3">기획서</a>
+                        <a href="#" class="w-btn">사이트</a>
+                    </div>
+                    <div class="name">
+                        <p>웹사이트 리디자인</p>
+                        <p>루시드슬립</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- //웹작업내용끝 -->
+
+
+    <!-- 3d & ux ui작업내용 -->
+    <div class="3d uiux projectwrap">
+        <div class="container">
+            <h4>3D & ui project</h4>
+            <div class="weball">
+                <div class="projectall">
+                    <div class="projectcontent ui1">
+                        <a href="#" class="w-btn btn4">기획서</a>
+                        <a href="#" class="w-btn">사이트</a>
+                    </div>
+                    <div class="name">
+                        <p>웹사이트 메타버스</p>
+                        <p>씨네큐</p>
+                    </div>
+                </div>
+
+                <div class="projectall">
+                    <div class="projectcontent ui2">
+                        <a href="#" class="w-btn btn5">기획서</a>
+                        <a href="#" class="w-btn">사이트</a>
+                    </div>
+                    <div class="name">
+                        <p>UI/UX 반려햄스터 앱디자인</p>
+                        <p>햄쥐품쥐</p>
+                    </div>
+                </div>
+
+                <div class="projectall">
+                    <div class="projectcontent ui3">
+                        <a href="#" class="w-btn btn6">기획서</a>
+                        <a href="#" class="w-btn">사이트</a>
+                    </div>
+                    <div class="name">
+                        <p>UI/UX 커피브랜드 폴바셋 앱디자인</p>
+                        <p>폴바셋</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //3d & ux ui작업내용끝 -->
+
+    <!-- work작업내용 -->
+    <div class="work projectwrap">
+        <div class="container">
+            <h4>Work project</h4>
+            <div class="weball">
+                <div class="projectall2">
+                    <div class="projectcontent">
+                        <img src="./img/workimg1.png" alt="회사작업1">
+                        <a href="#" class="w-btn2">이미지보기</a>
+                    </div>
+                </div>
+
+                <div class="projectall2">
+                    <div class="projectcontent">
+                        <img src="./img/workimg2.png" alt="회사작업2">
+                        <a href="#" class="w-btn2">이미지보기</a>
+                    </div>
+                </div>
+
+                <div class="projectall2">
+                    <div class="projectcontent">
+                        <img src="./img/workimg3.png" alt="회사작업3">
+                        <a href="#" class="w-btn2">이미지보기</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <!-- work작업내용 -->
+    <div class="Design projectwrap">
+        <div class="container">
+            <h4>Design project</h4>
+            <div class="weball">
+                <div class="projectall2">
+                    <div class="projectcontent graphic1">
+                        <img src="./img/graphicimg1.png" alt="그래픽작업이미지1">
+                        <a href="#" class="w-btn2">이미지보기</a>
+                    </div>
+                </div>
+                <div class="projectall2">
+                    <div class="projectcontent graphic2">
+                        <img src="./img/graphicimg2.png" alt="그래픽작업이미지2">
+                        <a href="#" class="w-btn2">이미지보기</a>
+                    </div>
+                </div>
+                <div class="projectall2">
+                    <div class="projectcontent graphic3">
+                        <img src="./img/graphicimg3.png" alt="그래픽작업이미지">
+                        <a href="#" class="w-btn2">이미지보기</a>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- //웹작업내용끝 -->
+    <footer>
+        <div class="stroke"></div>
+        <div class="container">
+            <div class="userwrap">
+                <p class="user">Copyright ⓒ sujeongJo portfolio. All rights reserved. kakao ID: nkss232/ E-mail: nkss232@naver.com</p>
+                <a href="#" class="up">UP</a>
+            </div>
+            <p class="address"></p>
+        </div>
+    </footer>
+
+    <!-- 맨 위로 가기 -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;}
+
+ul li{
+    list-style: none;
+}
+
+img {margin: 0; padding: 0;}
+
+
+button{
+    border:none;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+}
+
+@font-face {
+    font-family: 'Bochan Serif', sans-serif;
+    src: url('../font/Bochan\ Serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    src:
+      url('../fonts/OverusedGrotesk-VF.woff2') format('woff2 supports variations'),
+      url('../fonts/OverusedGrotesk-VF.woff2') format('woff2-variations');
+    font-weight: 300 900;
+  }
+
+  
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size:10px;
+    /* cursor:none; */
+}
+
+.cursor{
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    z-index:1000;
+    position:absolute;
+    background-color: #ffffff;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+

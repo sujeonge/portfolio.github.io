@@ -1,0 +1,56 @@
+:root {
+    font-size: 10px;
+
+    /* color */
+    --main-color: #017DCE; /*original-color*/
+    --sub-mint-color: #083e62;
+    --sub-mint-color:#42AEB5;
+    --sub-mint-color:#7CC0CF;
+    --grey-scale-100: #fff;
+
+    
+
+    /* font-size */
+    --font-size-headline-xxxxl: 9.6rem;
+    --font-size-headline-xxxl: 9.1rem;
+    --font-size-headline-xxl: 6.0rem; /*67px*/
+    --font-size-headline-xl: 4.8rem; /*48px*/
+    --font-size-headline-sxl:4.0rem; /*40px*/
+    --font-size-headline-sl: 3.6rem; /*36px*/
+    --font-size-headline-ssl: 3.2rem; /*32px*/
+    --font-size-headline-l: 2.8rem; /*28px*/
+    --font-size-headline-m: 2.4rem; /*24px*/
+    --font-size-headline-s: 2.0rem; /*20*/
+    --font-size-title-l: 1.8rem; /*18*/
+    --font-size-title-m: 1.6rem; /*16*/
+    --font-size-title-s: 1.4rem; /*14*/
+    --font-size-body-s: 1.2rem; /*12*/
+    --font-size-body-xs: 1rem; /*10*/
+    --font-size-title: 3.6rem; /*36*/
+    --font-size-title-j: 3.2rem; /*32*/
+
+    /* font-weight */
+    --font-weight-thin: 200;
+    --font-weight-regular: 300;
+    --font-weight-medium: 400;
+    --font-weight-large: 500;
+    --font-weight-bold: 600;
+
+    /* font-family */
+    --font-family-bochan:'Bochan Serif', sans-serif;
+    --font-over: 'Overused Grotesk', 'apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif';
+    --font-family-noto: 'Noto Sans KR', sans-serif;
+    /* radius */
+    --border-radius-sm: 10px;
+    --border-radius-m: 20px;
+    --border-radius-l: 30px;
+    --border-radius-xl: 40px;
+    --border-radius-xxl: 50px;
+}
+
+body {
+    font-family: var(--font-family-noto);
+}
+
+
+
