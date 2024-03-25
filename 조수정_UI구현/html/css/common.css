@@ -1,0 +1,273 @@
+/* header */
+header{
+    width:100%;
+    height: 190px;
+    z-index:9999;
+    position:absolute;
+    color:#fff;
+    transition-duration: 0.4s;
+}
+
+header h1{ 
+    width: 244px;
+    height: 62px;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:34px;
+    background:url(../img/header_lucid\ sleep_logo_white.png);
+}
+
+header .top-group{ 
+    display:flex;
+    justify-content:space-between;
+    height:120px;
+    font-size:18px;
+    align-items: center;
+}
+/* header_ left_login_logout*/
+
+.top-left{
+    display:flex;
+    margin-left:52px;
+}
+
+.top-left ul{display:flex;}
+
+.top-left ul li{
+    margin-right:14px;
+    text-transform:uppercase;
+    position:relative;
+    font-weight:400;
+}
+
+/* header_ right_input, mypage, heart, cart */
+
+.top-right{
+    display:flex;
+    margin-right:14px;
+    align-content:center;
+}
+
+.top-right ul{
+    display:flex;
+    margin-right:52px;
+    align-items:center;
+}
+
+/* header_input */
+.top-right div{
+    width:240px;
+    height:50px;
+    border-radius: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.top-right div input{
+    border: 0;
+    padding: 10px 7px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.top-right div img{
+    width: auto;
+}
+
+/* header_icon */
+.top-right ul li:nth-child(1) a{
+    background:url(../img/header_user_icon_white.png);
+    width:30px;
+    height:27px;
+    display:block;
+}
+
+.top-right ul li:nth-child(2) a{
+    background:url(../img/header_heart_icon_white.png);
+    width:30px;
+    height:30px;
+    display:block;
+}
+
+.top-right ul li:nth-child(3) a{
+    background:url(../img/header_cart_icon_white.png);
+    width:30px;
+    height:30px;
+    display:block;
+}
+
+.top-right ul li {margin-left: 10px;}
+
+/* header_hover */
+header:hover {
+    background-color: #fff;
+    color:#1F1D17;
+}
+
+header:hover .depth1 .t{color:#1F1D17}
+
+header:hover h1{
+    background:url(../img/header_lucid\ sleep_logo.png);
+}
+
+header:hover .top-right div,
+header:hover .top-right div input {
+    background:#FDF0E0;
+}
+
+
+/* header_hover change-color */
+header:hover .righticon li:nth-child(1) a{
+    background:url(../img/header_user_icon.png);
+    width:30px;
+    height:27px;
+}
+
+header:hover .righticon li:nth-child(2) a{
+    background:url(../img/header_heart_icon-1.png);
+    width:30px;
+    height:30px;
+}
+
+header:hover .righticon li:nth-child(3) a{
+    background:url(../img/header_cart_icon.png);
+    width:30px;
+    height:30px;
+}
+
+
+/*header_gnb*/
+ .gnb{ 
+    justify-content:center;
+    z-index: 1;
+    transition: all ease 0.2s;
+    color:#fff;
+    height: 69px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.gnb:hover{
+    color:#1F1D17;
+    font-weight:500;
+}
+
+.gnb .depth1 li.t{
+    position:relative; 
+}
+
+.gnb .depth1 li.t::after{
+    position:absolute;
+    content:'';
+    width:0;
+    background-color:#9F8E7C;
+    height:2px;
+    top: 39px;
+    left:0;
+    transition:0.3s;
+}
+
+
+
+.gnb .depth1 li.t:hover::after{
+    width:100%;
+    color:#1F1D17;
+}
+
+.gnb .depth1 {
+    display: flex;
+    width: 1312px;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gnb .depth1> li>a{
+   overflow: hidden;
+   margin: 0;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.gnb:has(> .depth1:hover) {
+    height:420px;
+    background-color: #fff;
+  }
+
+.gnb .depth2{
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.gnb .depth2> li>a {
+    padding-top: 15px;
+    display: block;
+}
+
+.gnb .depth2> li>a:hover{
+    color:#714B24;
+    font-weight:700;
+}
+/* //header */
+
+/* footer */
+
+footer{
+    padding:40px 120px 60px;
+    background-color:#F8F8F8;
+    color:#a1a1a1;
+}
+.foot{
+    display:flex;
+}
+
+.foot .foot-center ul{
+    display:flex;
+}
+
+.foot .foot-center ul li{
+    margin-right:30px;
+    color:#1F1D17;
+    font-size:14px;
+    position:relative;
+}
+
+.foot .foot-center ul li:last-child{
+    margin-right:0;
+}
+
+.foot .foot-center ul li{
+    margin-top:30px;
+}
+
+
+.foot .foot-center address{
+    font-size:12px;
+    margin-top:20px;
+    line-height:20px;
+}
+.foot .foot-center address span:not(:first-child)::before{
+    content:'';
+    width:1px;
+    height:11px;
+    background-color: #4f4f4f;
+    position:absolute;
+    top:50%;
+    left:-10px;
+    margin-top:-5px;
+}
+
+.foot .foot-center small{
+    text-transform: uppercase;
+    font-size:12px;
+}
+
+
+
+
+
+

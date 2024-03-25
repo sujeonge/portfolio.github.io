@@ -1,0 +1,28 @@
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul,ol,li{list-style:none;}
+
+body{
+    font-family: 'NanumSquareNeo';
+    color:#1F1D17;
+}
+
+img{vertical-align:top;}
+
+.blind{
+    position:absolute;
+    left:-9999px;
+}
